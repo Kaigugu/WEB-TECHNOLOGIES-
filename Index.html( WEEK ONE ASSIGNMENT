@@ -29,17 +29,17 @@
             <hr />
 
           <h3>SIMPLE LIFE REQUIREMENTS</h3>
-          <!-- Ordered lists -->
-           <ol type="I">
+          <!-- un-Ordered lists -->
+          <ul type="square"> 
                <li>Live</li>
                <li>Laugh</li>
                <li>Love</li>
            </ol>
            <hr />
 
-           <h4>HELPFUL LIFE HACKS</h4>
-           <!-- un-Ordered lists -->
-            <ul type="square"> 
+         <h4>HELPFUL LIFE HACKS</h4>
+         <!-- Ordered lists -->
+             <ol type="I">
                 <li>Take a Pause</li>
                 <li> Be Present</li>
                 <li>Then Proceed</li>
@@ -52,13 +52,47 @@
                <label for="name">Name:</label> 
                 <input type="text">
                 <br />
+                <br />
                 <label for="email">Email:</label>
                 <input type="email">
+                <br />
                 <br />
                 <label for="password">Password:</label>
                 <input type="password">
                 <br />
+                <br />
+                <P>Select your Gender</P>
+                <input type="radio" id="male" name="Gender" value="male">
+                <label for="male">Male</label>
+                <br/>
+                <input type="radio" id="Female" name="Gender" value="female">
+                <label for="female">Female</label>
+                <br />
+                <br />
+               
+                <label for="Profile Image">Select file</label>
+                <input type="file" id="Profile-Image" required>
+                <br />
+                <br />
 
+                <section>
+                    <table border="1">
+                      <thead>
+                            <tr>
+                                <th>Country</th>
+                               <th>City</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Kenya </td>
+                                <td> Nairobi </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br />
+            
                 <h6>COMPULSORY MOOD SELECTION</h6>
                 <label for="mood"> Choose your current mood</label>
                 <select name="mood" id="mood">
@@ -68,7 +102,17 @@
                 </select>
                 <br />
                 <br />
-                <button type="submit">submit</button>
+                <label for="what do you need to improve your mood">What can be done to improve your mood</label>
+                <input type="text" id="what do you need to improve your mood" placeholder="A trip to Malaysia" required> 
+                <br />
+                <br />
+                <p>Accept Terms and Conditions</p>
+                <input type="checkbox" id="Terms" required>
+                <label for="Terms">I Agree</label>
+                <br />
+                <br />
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
             </form>
     </BODy>
 </HTml>
